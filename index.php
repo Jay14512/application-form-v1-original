@@ -128,11 +128,9 @@ function save_application_and_resume(array $formData, array $fileData)
       <div class="field">
         <label class="label">Vorname</label>
         <div class="control">
-          <input type="text" name="vn" id="vorname"
-            class="input <?php if (isset($errors['vn'])) {
-              echo 'is-danger';
-            } ?>" placeholder="Vorname..." required
-            value="<?= $_POST['vn'] ?? ''; ?>">
+          <input type="text" name="vn" id="vorname" class="input <?php if (isset($errors['vn'])) {
+            echo 'is-danger';
+          } ?>" placeholder="Vorname..." required value="<?= $_POST['vn'] ?? ''; ?>">
           <?php
           // Fehlermeldung für Vorname ausgeben
           if (isset($errors["vn"])) {
@@ -145,11 +143,9 @@ function save_application_and_resume(array $formData, array $fileData)
       <div class="field">
         <label class="label">Nachname</label>
         <div class="control">
-          <input type="text" name="nn" id="nachname"
-            class="input <?php if (isset($errors['nn'])) {
-              echo 'is-danger';
-            } ?>" placeholder="Nachname..." required
-            value="<?= $_POST['nn'] ?? ''; ?>">
+          <input type="text" name="nn" id="nachname" class="input <?php if (isset($errors['nn'])) {
+            echo 'is-danger';
+          } ?>" placeholder="Nachname..." required value="<?= $_POST['nn'] ?? ''; ?>">
           <?php
           //Fehlermeldung für Nachname ausgeben
           if (isset($errors["nn"])) {
@@ -162,11 +158,9 @@ function save_application_and_resume(array $formData, array $fileData)
       <div class="field">
         <label class="label">Email</label>
         <div class="control">
-          <input type="email" name="email" id="email"
-            class="input <?php if (isset($errors['email'])) {
-              echo 'is-danger';
-            } ?>" placeholder="alexsmith@gmail.com"
-            required value="<?= $_POST['email'] ?? ''; ?>">
+          <input type="email" name="email" id="email" class="input <?php if (isset($errors['email'])) {
+            echo 'is-danger';
+          } ?>" placeholder="alexsmith@gmail.com" required value="<?= $_POST['email'] ?? ''; ?>">
           <?php
           //Fehlermeldung für E-Mail ausgeben
           if (isset($errors["email"])) {
@@ -181,8 +175,7 @@ function save_application_and_resume(array $formData, array $fileData)
         <div class="control">
           <input type="text" name="plz" id="plz" class="input <?php if (isset($errors['plz'])) {
             echo 'is-danger';
-          } ?>"
-            placeholder="1010" required value="<?= $_POST['plz'] ?? ''; ?>">
+          } ?>" placeholder="1010" required value="<?= $_POST['plz'] ?? ''; ?>">
           <?php
           //Fehlermeldung für PLZ ausgeben
           if (isset($errors["plz"])) {
@@ -197,8 +190,7 @@ function save_application_and_resume(array $formData, array $fileData)
         <div class="control">
           <input type="text" name="ort" id="ort" class="input <?php if (isset($errors['ort'])) {
             echo 'is-danger';
-          } ?>"
-            placeholder="Ort" required value="<?= $_POST['ort'] ?? ''; ?>">
+          } ?>" placeholder="Ort" required value="<?= $_POST['ort'] ?? ''; ?>">
           <?php
           //Fehlermeldung für Ort ausgeben
           if (isset($errors["ort"])) {
@@ -242,8 +234,7 @@ function save_application_and_resume(array $formData, array $fileData)
         <div class="control">
           <input type="date" name="dob" id="dob" class="input <?php if (isset($errors['dob'])) {
             echo 'is-danger';
-          } ?>"
-            placeholder="tt.mm.yyyy" required value="<?= $_POST['dob'] ?? ''; ?>">
+          } ?>" placeholder="tt.mm.yyyy" required value="<?= $_POST['dob'] ?? ''; ?>">
           <?php
           //Fehlermeldung für Nachname ausgeben
           if (isset($errors["dob"])) {
@@ -255,11 +246,9 @@ function save_application_and_resume(array $formData, array $fileData)
 
       <div class="file has-name">
         <label class="file-label">
-          <input type="file" name="resume" id="resume"
-            class="file-input <?php if (isset($errors['resume'])) {
-              echo 'is-danger';
-            } ?>" placeholder="Datei.pdf"
-            required value="<?= $_POST['resume'] ?? ''; ?>">
+          <input type="file" name="resume" id="resume" class="file-input <?php if (isset($errors['resume'])) {
+            echo 'is-danger';
+          } ?>" placeholder="Datei.pdf" required value="<?= $_POST['resume'] ?? ''; ?>">
           <?php
           //Fehlermeldung für Nachname ausgeben
           if (isset($errors["resume"])) {
@@ -281,10 +270,9 @@ function save_application_and_resume(array $formData, array $fileData)
       <label class="checkbox">
         <input class="checkbox <?php if (isset($errors["agb"])) {
           echo 'is-danger';
-        } ?>" type="checkbox"
-          value="AGB gelesen" id="agb" name="agb" required <?php
-          echo isset($_POST["agb"]) && !isset($errors["agb"]) ? 'checked' : '';
-          ?>>
+        } ?>" type="checkbox" value="AGB gelesen" id="agb" name="agb" required <?php
+         echo isset($_POST["agb"]) && !isset($errors["agb"]) ? 'checked' : '';
+         ?>>
         Ich akzeptiere die AGB
       </label>
       <br>
@@ -300,8 +288,8 @@ function save_application_and_resume(array $formData, array $fileData)
 
     </form>
   </main>
-  <footer>
-    &copy; 2025 Joshua Jason. All rights reserved
+  <footer class="site-footer">
+    <p>&copy; 2025 Joshua Jason. All rights reserved</p>
   </footer>
 </body>
 
