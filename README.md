@@ -1,5 +1,7 @@
 ## Application Form
 
+Original version of a PHP application form created during my PHP basics module.
+
 **Module:** PHP Basics  
 **Goal:** Form Validation and Error Handling  
 **Status:** ✅ Done   
