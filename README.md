@@ -1,29 +1,56 @@
-## Application Form
+# Application Form (original)
 
-Original version of a PHP application form created during my PHP basics module.
+A simple PHP application form created during my *PHP Basics* module.  
+This version focuses on understanding **server-side validation**, **error handling**, and **basic file processing** without relying on external libraries or frameworks.
 
 **Module:** PHP Basics  
-**Goal:** Form Validation and Error Handling  
-**Status:** ✅ Done   
+**Goal:** Server-side validation & CSV handling  
+**Status:** ✅ Completed  
 **Version:** 1.0  
-**Technologies:** PHP, Bulma  
+**Tech:** PHP, Bulma CSS  
 
-## Description
-This exercise focused on building an application form (`index.php`) with multiple required fields.  
-All inputs had to be validated using PHP to ensure data correctness, display meaningful error messages, and provide visual feedback when invalid data was entered.  
+---
 
-Validated fields:
+## 📌 Project Overview
+
+The goal of this assignment was to build an application form (`index.php`) that collects user data and validates all inputs using **vanilla PHP**. The form needed to show meaningful error messages, highlight invalid fields, and only accept submissions when all data met the validation rules.
+
+Once validated, the information is stored in a CSV file, and the uploaded CV (PDF) is saved in a dedicated folder without overwriting existing files.
+
+---
+
+## ✨ Features
+
+- Server-side input validation in PHP  
+- Custom error messages for each field  
+- Highlighting invalid inputs with visual feedback  
+- PDF upload validation (type + name handling)  
+- Preventing filename collisions  
+- Storing submissions in a CSV file  
+- Minimal, clean UI using Bulma  
+
+---
+
+## 🧪 Validated Fields
+
 - First Name (min. 2 characters)  
 - Last Name (min. 2 characters)  
-- E-Mail (valid format)  
+- Email (valid format)  
 - ZIP Code (numeric)  
 - City  
 - Region  
-- Birth Date (minimum age: 18 years)  
-- CV (PDF upload)  
-- General Terms and Conditions (checkbox)  
+- Date of Birth (must be ≥ 18 years old)  
+- CV Upload (PDF only)  
+- General Terms and Conditions (required checkbox)  
 
-On successful validation, all user data—including the file path to the uploaded CV—had to be saved in a CSV file, and the PDF stored in a separate folder without overwriting existing files.
+---
 
-## Main Goal
-Server-side validation and error handling in PHP, including file upload management and CSV storage.
+## 🧠 What I Learned
+
+- How to validate form inputs on the server side  
+- How to securely handle file uploads in PHP  
+- Working with CSV files for lightweight data storage  
+- Managing error states and showing useful feedback  
+- Avoiding file overwrites by generating unique filenames  
+
+This project was my first step into backend logic and laid the foundation for the more structured **refactored version (v2)**.
